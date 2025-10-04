@@ -10,6 +10,28 @@
 - Red (use RDS MySQL)
 - HelloWorld (only Fixed Responses)
 
+## Docker Repositories
+
+### Repository URLs
+- **Product App**: `juanylee/demo-product`
+- **User App**: `juanylee/demo-user`
+- **Stress App**: `juanylee/demo-stress`
+- **Green App**: `juanylee/demo-green`
+- **Red App**: `juanylee/demo-red`
+- **HelloWorld App**: `juanylee/helloworld`
+
+### Usage
+```bash
+# Pull latest image
+docker pull juanylee/demo-product:latest
+
+# Run container
+docker run -p 8080:8080 juanylee/demo-product:latest
+
+# Run with specific version
+docker run -p 8080:8080 juanylee/demo-product:1.0.0
+```
+
 ## API Specs
 
 ### Product App
