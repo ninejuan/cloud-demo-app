@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS red (
+    id VARCHAR(50) PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE INDEX idx_red_created_at ON red(created_at);

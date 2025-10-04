@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS green (
+    id VARCHAR(50) PRIMARY KEY,
+    x VARCHAR(255) NOT NULL,
+    y INTEGER NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE INDEX IF NOT EXISTS idx_green_created_at ON green(created_at);
